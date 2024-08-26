@@ -1,14 +1,20 @@
 #Ejercicio 2
-Nombre=input("ingrese su nombre: ")
-Cuantas=int(input("Ingrese Cuantas zapatillas compro: "))
-Valor_total_compra=int(input("Valor total de sus zapatillas: "))
-if Cuantas>=3:
-    Descuento= Valor_total_compra * 0.2
-    Valor_final=(Valor_total_compra - Descuento)
-    print(f"Señor@" ,Nombre, "su valor de compra es " ,Valor_total_compra, "su descuento es de" ,Descuento, "y el valor total con el descuento es de " ,Valor_final)
-elif Cuantas<3:
-    Descu= Valor_total_compra * 0.1
-    Va_fi=(Valor_total_compra - Descu)
-    print(f"señor@" ,Nombre, "su valor de compra es" ,Valor_total_compra, "su descuento es de " ,Descu, "y el valor final con el descuento es de" , Va_fi )
+# Solicita al usuario que ingrese la cantidad de productos que va a comprar y convierte la entrada a tipo entero
+cantidadProductos = int(input("Ingrese la cantidad de productos que va a comprar: "))
+
+# Solicita al usuario que ingrese el total de la compra y convierte la entrada a tipo entero
+totalCompra = int(input("Ingrese el total de la compra: "))
+
+# Verifica si la cantidad de productos es mayor o igual a 3
+if cantidadProductos >= 3:
+    # Calcula el descuento del 20% sobre el total de la compra si se compran 3 o más productos
+    descuento = totalCompra * (20 / 100)
 else:
-    print(f"No dijito bien los datos")
+    # Calcula el descuento del 10% sobre el total de la compra si se compran menos de 3 productos
+    descuento = totalCompra * (10 / 100)
+
+# Calcula el total a pagar después de aplicar el descuento
+final = totalCompra - descuento
+
+# Imprime el valor de la compra, la cantidad de productos, el descuento aplicado y el total a pagar
+print(f"El valor de la compra es de: {totalCompra}, compraste {cantidadProductos}, así que tu descuento es un total de: {descuento}, el total a pagar es de {final}.")

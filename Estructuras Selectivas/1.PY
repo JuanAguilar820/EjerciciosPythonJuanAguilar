@@ -1,12 +1,14 @@
 #Ejercicio 1
-Nombre=input("Digite el nombre del estudiante: ")
-Nota1=int(input("Dijite su primera nota: "))
-Nota2=int(input("Dijite su segunda nota: "))
-Nota3=int(input("Dijite su tercera nota: "))
-Promedio= (Nota1 + Nota2 + Nota3) / 3
-if Promedio>=70:
-  print (f"El estudiante" ,Nombre, "aprueba")
-elif Promedio<70:
-  print(f"el estudiante" ,Nombre, "no aprueba ") 
+# Solicita al usuario que ingrese el nombre del aprendiz
+aprendiz = input("Ingresa el nombre del aprendiz: ")
+
+# Solicita al usuario que ingrese la nota final, y la convierte a un entero
+nota = int(input("Ingresa la nota final: "))
+
+# Verifica si la nota es mayor o igual a 70
+if nota >= 70:
+    # Si la nota es mayor o igual a 70, se imprime un mensaje indicando que el aprendiz aprobó
+    print(f"El aprendiz {aprendiz} aprobó.")
 else:
-  print(f"no dijito bien sus notas") 
+    # Si la nota es menor a 70, se imprime un mensaje indicando que el aprendiz NO aprobó
+    print(f"El aprendiz {aprendiz} NO aprobó.")
