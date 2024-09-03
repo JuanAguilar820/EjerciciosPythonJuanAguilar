@@ -1,3 +1,7 @@
+"""Una persona debe realizar un muestreo con 50 personas para determinar el 
+promedio de peso de los niños, jóvenes, adultos y ancianos que existen en su zona. 
+Las categorías se determinar de acuerdo a la siguiente tabla: """
+
 # Inicialización de variables para almacenar los pesos y los contadores de cada categoría
 peso_total_ninos = 0
 peso_total_jovenes = 0
