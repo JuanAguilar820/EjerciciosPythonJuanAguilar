@@ -1,3 +1,6 @@
+"""Calcular la cantidad de hombres y mujeres presentes en un salón de clases con un 
+total de n personas.""" 
+
 # Solicitar al usuario el número total de personas en el salón
 num_personas = int(input("Ingrese el número total de personas en el salón: "))
 
@@ -21,5 +24,7 @@ for i in range(num_personas):
         i -= 1
 
 # Mostrar los resultados
+print(f"\nCantidad de hombres: {contador_hombres}")
+print(f"Cantidad de mujeres: {contador_mujeres}")
 print(f"\nCantidad de hombres: {contador_hombres}")
 print(f"Cantidad de mujeres: {contador_mujeres}")
