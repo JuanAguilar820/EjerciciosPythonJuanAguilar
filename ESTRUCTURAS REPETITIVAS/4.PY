@@ -1,3 +1,6 @@
+""" Calcular e imprimir la tabla de multiplicar de un número cualquiera, el cual se 
+digitará por teclado. Imprimir el multiplicando, el multiplicador y el producto. """
+
 # Solicitar al usuario que ingrese un número para calcular su tabla de multiplicar
 numero = int(input("Ingrese un número para calcular su tabla de multiplicar: "))
 
